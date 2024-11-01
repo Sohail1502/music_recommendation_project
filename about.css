@@ -1,0 +1,149 @@
+/* General styles for body */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* Hero section styles */
+
+.hero-background {
+    background: url('https://png.pngtree.com/background/20240112/original/pngtree-professional-dj-controls-the-music-on-board-at-nightclub-party-with-picture-image_7228404.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding-top: 70px;
+    /* Space for fixed header */
+}
+
+
+/* Navbar styles */
+
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+/* Footer styles */
+
+footer {
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Content area styles */
+
+.content-area {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blurred background */
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.6;
+    font-size: 1rem;
+    position: relative;
+    flex-direction: column;
+    /* Stack content vertically */
+}
+
+
+/* Heading inside content-area */
+
+.content-area h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    text-align: center;
+    /* Center heading */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* Divider below heading */
+    padding-bottom: 10px;
+    /* Spacing below heading */
+}
+
+
+/* Paragraph inside content-area */
+
+.content-area p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    /* Consistent spacing between paragraphs */
+    text-align: justify;
+    /* Justify text for cleaner look */
+}
+
+
+/* Bullet points styling inside content-area */
+
+.content-area ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    /* Indent list for alignment */
+    margin: 15px 0;
+}
+
+.content-area ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+
+/* Image next to "About Us" */
+
+.about-image {
+    width: 130px;
+    margin-bottom: 20px;
+    /* Space below image */
+    align-self: center;
+    /* Center align the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 768px) {
+    .content-area {
+        padding: 25px 15px;
+        /* Adjust padding for mobile */
+    }
+    .about-image {
+        width: 100px;
+        /* Smaller image on mobile */
+    }
+    .content-area h2 {
+        font-size: 1.8rem;
+    }
+    .content-area p,
+    .content-area ul li {
+        font-size: 1rem;
+    }
+}
